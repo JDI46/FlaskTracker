@@ -7,5 +7,14 @@ def home():
     return render_template('base.html')
 
 
+@app.route('/login', methods=['Post', 'GET'])
+def login():
+    if request.method == "POST":
+	    user = request.form["nm"]
+        return redirect(url_for("user", usr=user))
+    else:
+	    return render_template("login.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
+
