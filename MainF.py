@@ -14,9 +14,9 @@ def home():
 def projects():
     return render_template('projects.html')
 
-@app.route('/messageme')
-def projects():
-    return render_template('messageme.html')
+# @app.route('/messageme')
+# def projects():
+#     return render_template('messageme.html')
 
 # @app.route('/messageme')
 # me():
