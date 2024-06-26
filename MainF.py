@@ -6,9 +6,9 @@ app = Flask(__name__)
 def base():
     return render_template("home.html")
 
-@app.route('/home')
+@app.route('/admin')
 def home():
-    return render_template('home.html')
+    return render_template('admin_page.html')
 
 @app.route('/projects')
 def projects():
