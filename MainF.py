@@ -1,8 +1,8 @@
 from flask import Flask, redirect, url_for, render_template, request
-
 app = Flask(__name__)
 
-@app.route("/")
+
+@app.route("/home")
 def base():
     return render_template("home.html")
 
