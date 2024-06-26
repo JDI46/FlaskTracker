@@ -10,9 +10,9 @@ def base():
 def home():
     return render_template('admin_page.html')
 
-@app.route('/projects')
+@app.route('/login')
 def projects():
-    return render_template('projects.html')
+    return render_template('login.html')
 
 # @app.route('/messageme')
 # def projects():
