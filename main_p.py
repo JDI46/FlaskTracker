@@ -11,7 +11,9 @@ def base():
 def home():
     return render_template('admin_page.html')
 
-
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
 
 
 # @app.route('/messageme')
